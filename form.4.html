@@ -1,0 +1,125 @@
+<html>
+<head>
+    <title>Registration Form</title>
+    <style>
+        h1
+        {
+            font-size: 22px;
+            font-family: sans-serif;
+        }
+        p
+        {
+            font-size: 11px;
+        }
+        .btn
+        {
+            width: 42px;
+            height: 15px;
+            font-size: 8px;
+            background: rgb(41, 187, 200);
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-style: italic;
+        }
+        #form 
+        {
+            width: 300px;
+            min-height: 95vh;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 1px 1px 9px black;
+            flex-direction: column;
+            align-items: center;
+        }
+        #form h1
+        {
+            font-style: inherit;
+            font-size: 20px;
+            padding-top: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            letter-spacing: -1px;
+            color: #11444e;
+        }
+        #form hr
+        {
+            width: 250px;
+        }
+        #form p
+        {
+            display: flex;
+            padding-left: 25px;
+        }
+        .text
+        {
+            width: 200px;
+            margin-left: 25px;
+            color: black;
+            font-style: italic;
+            font-size: 9px;
+        }
+        #main
+        {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .sub
+        {
+            margin-left: 200px;
+            margin-top: 10px;
+        }
+        #last
+        {
+            width: 100%;
+            height: 40px;
+            margin-top: 10px;
+            background: #e7f1f0;
+        }
+        #form b
+        {
+            font-size: 10px;
+            margin-left: 130px;
+        }
+        .login
+        {
+            width: 45px;
+            height: 20px;
+            font-size: 10px;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+    <body>
+        <div id="main">
+        <h1>LOGIN AND REGISTRATION FORM<b> WITH HTML5 AND CSS3</b> </h1>
+        <p>
+            Click <b>"Join us"</b> to see the form switch
+        <input type="button" value="Demo 1" class="btn" style=" margin-left: 12px;"> 
+        <input type="button" value="Demo 2" class="btn"> 
+        <input type="button" value="Demo 3" class="btn" style="color: rgb(41, 187, 200) ; background: white;">
+        </p>
+        <div id="form">
+            <h1>SIGN UP</h1>
+            <hr>
+            <p>Your Username</p>
+            <input type="text" name="user" class="text" placeholder="mysuperusername60"><br>
+            <p>Your Email</p>
+            <input type="email" name="user" class="text" placeholder="mysuper@mail.com"><br>
+            <p>Your Password</p>
+            <input type="password" name="user" class="text" placeholder="ex : x39@nag#54"><br>
+            <p>Your Confirm Password</p>
+            <input type="password" name="user" class="text" placeholder="ex : x39@nag#54"><br>
+            <input type="submit" value="SIGN UP" class="sub">
+            <div id="last">
+                <br>
+            <b>Already a Member ?</b><input type="button" value="Login" class="login">
+            </div>
+        </div>
+        </div>
+    </body>
+</html>

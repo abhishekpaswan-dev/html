@@ -1,0 +1,365 @@
+<html>
+<head>
+    <style>
+        :root
+        {
+            --mycolor:#d77d21;
+            --itcolor:#5fc4fe;
+        }
+        #outer
+        {
+          min-height: 1000px;
+          width: 1200px;
+          border: 1px solid black;
+          margin: 0px auto;
+        }
+        #top
+        {
+            min-height: 580px;
+            width: 1200px;
+            background: url("image/abhishek.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+            animation: slider 10s infinite alternate;
+        }
+        #head
+        {
+            height: 50px;
+            width: 1200px;
+            background: rgba(0,0, 0, .2);
+            //border-bottom: 1px solid white;
+
+        }
+        #logo
+        {
+            height: 50px;
+            width: 300px;
+            float: left;
+            //background: red;
+            text-align: center;
+            line-height: 50px;
+            font-size: 35px;
+            color:white;
+            
+        }
+        #menu
+        {
+            height: 50px;
+            width: 900px;
+            float: left;
+            //background: maroon;
+        }
+        nav ul
+        {
+            list-style-type: none;
+        }
+        nav ul li 
+        {
+            height: 40px;
+            width: 120px;
+            //background: yellow;
+            //border: 1px solid aqua;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50px;
+            float: left;
+            transform: translateY(-12px);
+            margin-left: 2px;
+            font-weight: bold;
+            color: white;
+        }
+        nav ul li:hover
+        {
+            background: var(--mycolor);
+            transition: all ease 1s;
+        } 
+        #head1
+        {
+            width: 1200px;
+            min-height: 500px;
+        }
+        #left
+        {
+            min-height: 500px;
+            width: 700px;
+            float: left;
+            //background: red;
+            padding-top: 200px;
+            box-sizing: border-box;
+            color:white;
+        }
+        #right
+        {
+            min-height: 450px;
+            width: 400px;
+            float: left;
+            background: aqua;
+            margin: 25px 50px;
+            background: rgba(255,255, 255, .3);
+            padding: 40px;
+            box-sizing: border-box;
+            font-size: 18px;
+            
+        }
+        .txt
+        {
+            height: 45px;
+            width: 100%;
+            border-radius: 4px;
+            margin-bottom :5px; 
+            border: none;
+            padding-left: 5px;
+            box-sizing: border-box;
+            color: white;
+            font-weight: bold;
+            font-size: 15px;
+        }
+        .txta
+        {
+            height: 80px;
+            width: 100%;
+            border-radius: 4px;
+            margin-bottom :5px; 
+            border: none;
+            padding-left: 5px;
+            box-sizing: border-box;
+            font-size: 15px;
+            color: blue;
+        }
+        .btn
+
+        {
+            background: var(--mycolor);
+            height: 45px;
+            width: 100%;
+            border-radius: 5px;
+            margin-top:10px; 
+            border: none;
+            padding-left: 5px;
+            box-sizing: border-box;
+            color: white;
+        }
+        @keyframes slider 
+        {
+            0%
+            {
+             background: url(image/abhishek2.jpg);
+             background-size: cover;
+
+            }
+            50%
+            {
+                background: url(image/abhishek3.jpg);
+             background-size: cover;
+
+            }
+            100%
+            {
+                background: url(image/abhishek4.jpg);
+             background-size: cover;
+
+            }
+        }
+        #aboutus
+        {
+           
+            width: 1200px;
+            background:var(--itcolor) ;
+            padding: 25px 150px;
+            box-sizing: border-box;
+            text-align: justify;
+            column-count: 3;
+            column-gap: 30px;
+            column-rule: 10px dashed red;
+        }
+        #services
+        {
+            min-height: 500px;
+            width: 1200px;
+            padding: 50px 150px;
+            box-sizing: border-box;
+
+        }
+        .row
+        {
+            background: white;
+            min-height: 250px;
+            width: 900px;
+        }
+        .col
+        {
+            height: 250px;
+            width: 280px;
+            float: left;
+            background: var(--itcolor);
+            margin: 10px;
+            border-radius: 10px;
+            border: 2px solid silver;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        #contactus
+        {
+            min-height: 500px;
+            width: 1200px;
+            background: var(--itcolor);
+            text-align: center;
+            
+        }
+        #gallery
+        {
+            min-height: 600px;
+            width: 1200px;
+            background: var(--mycolor);
+            
+        }
+        #team
+        {
+            min-height: 300px;
+            width: 1200px;
+            
+        }
+        #ufooter
+        {
+            min-height: 300px;
+            width: 1200px;
+            background: black;
+            border-bottom: 2px solid white;
+            
+        }
+        #bfooter
+
+        {
+            min-height: 50px;
+            width: 1200px;
+            background: black;
+            color: white;
+            line-height: 50px;
+            text-align: center;
+            font-size: 22px;
+            
+        }
+        .col:hover
+        {
+            background:yellow;
+            background-size: cover;
+            color:red;
+            transition: all ease .5s;
+            transform: scale(1.005);
+            box-shadow: 0px 0px 20px 2px black;
+        }
+        
+
+
+
+    </style>
+</head>
+<body>
+    <div id="outer">
+        <div id="top">
+            <div id="head">
+                
+                <div id="logo">TechStudy  <b style="color: var(--mycolor);">Hub</b></div>
+                <div id="menu">
+                    <nav>
+                        <ul>
+                            <a href="#"><li>Home</li></a>
+                            <a href="#"><li>About</li></a>
+                            <a href="#"><li>Conatact</li></a>
+                            <a href="#"><li>Registration</li></a>
+                            <a href="#"><li>Login</li></a>
+                            <a href="#"><li>Gallery</li></a>
+
+                        </ul>
+                    </nav>
+                   
+                    </div>
+                    <div id="head1">
+                        <div id="left">
+                            <div style="font-size: 32px; text-align: center;">Welcome To <b style="color: var(--mycolor);">TechStudy HUB</b> </div>
+                            <div style="text-align:center ;">Lorem, ipsum dolor sit amet consectetur adipisicing elit.uam, quibusdam dicta omnis expedita consequuntur distinctio sed facere temporibus maiores ad quaerat prov, nihil ut.
+                            Eveniet perferendis deserunt dicta minus incidunt facere praesentium cum obcaecati veniam magnam rerum solutquam fuga ab undeur architecto numquam nemo.</div>
+                        
+                        <div style="height:45px ;width:110px;border-radius:50px;background:var(--mycolor);text-align:center; color: aqua; margin: 0px auto;line-height: 45px;">Sign Up</div>
+                        </div>
+                        <div id="right">
+                            <form>
+                                Name <br> <input type="text" class="txt" required placeholder="Enter Name"/>
+                                Email <br> <input type="text"class="txt" required placeholder="Enter MAil"/>  
+                                Mobile <br> <input type="text" class="txt" required placeholder="Enter Number"/>  
+                                Message <br> <textarea class="txt" required placeholder="Message"></textarea> 
+                                <input type="Submit" value="SAVE" class="btn">                         
+                            </form>
+                        </div>
+                </div>
+            </div>
+           
+        </div>
+        <div id="aboutus">
+            <div style="font-size: 32px; text-align:center;">About <b style="color:red ;">Us</b></div>
+            <div style="width: ;100%">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam laudantium modi, rerum blanditiis vel porro assumenda sit quod vero id debitis. Velit itaque earum unde iste voluptatum maxime quaerat ipsam.
+            Quam ut accusamus, suscipit nesciunt autem recusandae deserunt sapiente, corporis iure a quae excepturi magni cum. Eligendi sunt rerum, deserunt eum impedit, quasi deleniti exercitationem ab perspiciatis laudantium optio rem!
+            Eaque earum distinctio enim saepe. Magnam ratione eaque ea sint doloribus error ipsum necessitatibus, accusamus quas ipsa architecto, tenetur qui sit, omnis rerum. Laboriosam quos quidem ipsa sint at numquam.
+            Minima nisi, nihil sit id, autem aliquid minus quaerat rem repudiandae ipsum pariatur facilis! Temporibus, aut. Sit, consequatur commodi accusantium unde impedit, officia cum officiis earum dicta veritatis iusto pariatur?
+            Quibusdam ducimus veniam aliquid quam nam libero sapiente unde iure eaque cumque ex dolorum veritatis dolore sed voluptatibus non, molestiae necessitatibus pariatur? Laudantium nihil quos hic blanditiis minima itaque eos!
+        </div>
+        </div>
+        <div id="services">
+            <div style="font-size: 32px; text-align:center;">Our <b style="color:red ;">Services</b></div>
+            <div class="row">
+                <div class="col">
+                    <center>
+                        <img src="image/CONTACT.png" height="40px"/>
+                </center><br>
+                <b>lorem</b><br><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, consequuntur alias quas fugit quos inventore veritatis tempore magni sapiente e</p>
+                </div>
+                <div class="col">
+                    <center>
+                        <img src="image/coffee-shop.png" height="40px"/>
+                </center><br>
+                <b>Coffee</b><br><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, consequuntur alias quas fugit quos inventore veritatis tempore magni sapiente e</p>
+                </div>
+                <div class="col">
+                    <center>
+                        <img src="image/coffee-shop.png" height="40px"/>
+                </center><br>
+                <b>Coffee</b><br><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, consequuntur alias quas fugit quos inventore veritatis tempore magni sapiente e</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <center>
+                        <img src="image/coffee-shop.png" height="40px"/>
+                </center><br>
+                <b>Coffee</b><br><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, consequuntur alias quas fugit quos inventore veritatis tempore magni sapiente e</p>
+                </div>
+                <div class="col">
+                    <center>
+                        <img src="image/coffee-shop.png" height="40px"/>
+                </center><br>
+                <b>Coffee</b><br><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, consequuntur alias quas fugit quos inventore veritatis tempore magni sapiente e</p>
+                </div>
+                <div class="col">
+                    <center>
+                        <img src="image/coffee-shop.png" height="40px"/>
+                </center><br>
+                <b>Coffee</b><br><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, consequuntur alias quas fugit quos inventore veritatis tempore magni sapiente e</p>
+                </div>
+
+            </div>
+        </div>
+        <div id="contactus">
+        <div style="font-size: 32px; text-align:center;">Google<b style="color:red;">Map</b></div>
+            
+        </div>
+        <div id="team"></div>
+        <div id="galler"></div>
+        <div id="ufooter"></div>
+        <div id="bfooter"></div>
+      
+       
+    </div>
+    
+</body>
+</html>

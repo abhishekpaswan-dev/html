@@ -1,0 +1,39 @@
+<html>
+<head>
+    <style>
+        #box
+        {
+            height: 400px;
+            width: 600px;
+            margin: 80px auto;
+            border: 10px solid black;
+            color: white;
+            text-align: center;
+            line-height: 400px;
+            transform-style:preserve-3d ;
+            transform: rotateY(30deg);
+            /* background: rgba(255, 255, 0, .3); */
+        }
+        #inner
+        {
+            height: 400px;
+            width: 600px;
+            background-image:url("image/background.jpg");
+            background-size:100% 100%;
+            transform: perspective(700px) rotateX(90deg);
+            transform-origin: 100% 50%;
+            transition: all ease 2s;
+        }
+        #inner:hover{
+            transition: all ease 2s;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div id="inner">
+
+        </div>
+    </div>
+</body>
+</html>
